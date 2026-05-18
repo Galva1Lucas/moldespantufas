@@ -1393,5 +1393,44 @@ document.querySelectorAll('a[href="#planos"]').forEach(function(a){
   });
 });
 </script>
+
+<!-- PROTEÇÃO CONTRA INSPEÇÃO -->
+<script>
+// Bloquear F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C, Ctrl+S
+document.addEventListener('keydown', function(e){
+  // F12
+  if(e.keyCode === 123){ e.preventDefault(); return false; }
+  // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C
+  if(e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)){
+    e.preventDefault(); return false;
+  }
+  // Ctrl+S
+  if(e.ctrlKey && e.keyCode === 83){ e.preventDefault(); return false; }
+});
+
+// Bloquear clique direito
+document.addEventListener('contextmenu', function(e){
+  e.preventDefault(); return false;
+});
+
+// Bloquear devtools
+(function(){
+  let devtools = { open: false, orientation: null };
+  const threshold = 160;
+  
+  setInterval(function(){
+    if(window.outerHeight - window.innerHeight > threshold || 
+       window.outerWidth - window.innerWidth > threshold){
+      if(!devtools.open){
+        devtools.open = true;
+        document.body.innerHTML = '';
+      }
+    } else {
+      devtools.open = false;
+    }
+  }, 500);
+})();
+</script>
+
 </body>
 </html>
