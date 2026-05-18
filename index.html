@@ -473,8 +473,20 @@ button.btn-cta { border: none; width: 100%; display: block; margin: 0 auto; }
 .dep-carousel-viewport { flex: 1; overflow: hidden; border-radius: 18px; }
 .dep-carousel-track { display: flex; transition: transform 0.38s cubic-bezier(.4,0,.2,1); will-change: transform; }
 .dep-slide { min-width: 100%; padding: 0 4px; }
-.dep-img-placeholder { border-radius: 16px; overflow: hidden; background: #1a1a2e; position: relative; min-height: 280px; display: flex; align-items: center; justify-content: center; }
-.dep-img-placeholder img { width: 100%; height: auto; display: block; border-radius: 16px; object-fit: contain; }
+.dep-img-placeholder {
+  border-radius: 16px;
+  overflow: hidden;
+  background: #1a1a2e;
+  position: relative;
+  min-height: 420px;
+}
+.dep-img-placeholder img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+}
 .dep-arrow { flex-shrink: 0; width: 38px; height: 38px; border-radius: 50%; background: #FF6B00; color: #fff; border: none; font-size: 22px; font-weight: 900; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 10px rgba(255,107,0,0.35); transition: transform .15s, background .15s; z-index: 2; padding: 0; }
 .dep-arrow:hover { background: #e05500; transform: scale(1.08); }
 .dep-prev { margin-right: 8px; }
