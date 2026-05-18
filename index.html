@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>+200 Moldes de Pantufas + Videoaulas | Aprenda e Lucre Nesse Inverno</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #f9f9f9;
+  color: #1a1a1a;
+  max-width: 480px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+/* TOP BAR */
+.topbar {
+  background: linear-gradient(135deg, #7F0000, #B30000);
+  color: #fff;
+  text-align: center;
+  padding: 11px 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+
+  box-shadow: 0 2px 10px rgba(127, 0, 0, 0.35);
+}
+
+/* HERO */
+.hero {
+  background:
+    linear-gradient(160deg, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.76) 100%),
+    url('img/heroimg.webp') center center / cover no-repeat;
+  text-align: center;
+  padding: 32px 20px 28px;
+}
+.hero-mockup { margin: 14px auto 16px; }
+.hero-mockup img {
+  width: 100%;
+  max-width: 340px;
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50%      { transform: translateY(-7px); }
+}
+.hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 34px; font-weight: 900;
+  line-height: 1.2; margin-bottom: 14px;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.45);
+}
+.hero h1 span { color: #FF6B00; }
+.highlight-underline {
+  color: #fff !important;
+  text-decoration: underline;
+  text-decoration-color: #FF6B00;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+}
+.hero p {
+  font-size: 18px; color: #f0f0f0;
+  line-height: 1.7; margin-bottom: 28px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+.destaque { font-weight: 900; color: #FFB066; }
+
+/* MINI SOCIAL PROOF */
+.mini-social-proof {
+  display: flex; align-items: center; justify-content: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(6px);
+  padding: 10px 16px; border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  margin: 8px auto 18px;
+  width: fit-content;
+}
+.mini-social-proof span { font-size: 13px; font-weight: 700; color: #fff; }
+.avatars { display: flex; align-items: center; }
+.avatars img {
+  width: 30px; height: 30px; border-radius: 50%;
+  object-fit: cover; border: 2px solid #fff; margin-left: -8px;
+}
+.avatars img:first-child { margin-left: 0; }
+.avatar-last { position: relative; margin-left: -8px; }
+.avatar-last img { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; }
+.avatar-plus {
+  position: absolute; bottom: -1px; right: -1px;
+  background: #FF6B00; color: #fff;
+  font-size: 9px; font-weight: 900;
+  width: 14px; height: 14px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  border: 2px solid #fff;
+}
+
+/* MÉTODOS COM/SEM COSTURA */
+.metodo-row {
+  display: flex; gap: 10px; margin-bottom: 22px; justify-content: center;
+}
+.metodo-badge {
+  flex: 1; max-width: 180px;
+  border-radius: 14px; padding: 14px 12px;
+  text-align: center; font-size: 13px; font-weight: 800;
+  border: 2px solid;
+}
+.metodo-badge.costura {
+  background: rgba(255,107,0,0.15); border-color: #FF6B00; color: #FFB066;
+}
+.metodo-badge.sem-costura {
+  background: rgba(22,128,58,0.15); border-color: #22c55e; color: #4ade80;
+}
+.metodo-badge .mb-icon { font-size: 24px; display: block; margin-bottom: 6px; }
+.metodo-badge .mb-label { font-size: 11px; font-weight: 700; opacity: 0.8; margin-top: 4px; }
+
+/* BOTÕES */
+.btn-cta {
+  display: block;
+  background: linear-gradient(135deg, #FF6B00, #e05500);
+  color: #fff; font-family: 'Montserrat', sans-serif;
+  font-size: 20px; font-weight: 800;
+  padding: 22px 24px; border-radius: 50px;
+  text-decoration: none; border: none; cursor: pointer;
+  box-shadow: 0 6px 20px rgba(255,107,0,0.38);
+  transition: transform .15s, box-shadow .15s;
+  text-align: center; letter-spacing: 0.3px;
+}
+.btn-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(255,107,0,0.48); }
+.btn-cta.green {
+  background: linear-gradient(135deg, #16803a, #22c55e);
+  box-shadow: 0 6px 20px rgba(22,128,58,0.38);
+}
+.btn-cta.green:hover { box-shadow: 0 10px 28px rgba(22,128,58,0.48); }
+.btn-cta.pulse { animation: pulseGlow 2s ease-in-out infinite; }
+@keyframes pulseGlow {
+  0%,100% { box-shadow: 0 6px 20px rgba(22,128,58,0.38); transform: scale(1); }
+  50%      { box-shadow: 0 8px 32px rgba(22,128,58,0.58), 0 0 22px rgba(22,128,58,0.3); transform: scale(1.025); }
+}
+button.btn-cta { border: none; width: 100%; display: block; margin: 0 auto; }
+
+/* SEÇÕES */
+.sec { padding: 52px 20px; background: #fff; }
+.sec.alt { background: #f9f6f2; }
+.sec-title {
+  font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: 900;
+  text-align: center; margin-bottom: 32px; color: #111; line-height: 1.2;
+}
+.sec-title span { color: #FF6B00; }
+.divider { height: 4px; background: linear-gradient(90deg,#FFD600,#FF6B00,#FFD600); }
+
+/* ÍCONES */
+.icon-wrap {
+  width: 62px; height: 62px; border-radius: 14px;
+  background: #FFF0E0;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.icon-wrap svg { width: 32px; height: 32px; stroke: #FF6B00; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+/* CARROSSEL INFINITO */
+.car-wrap {
+  overflow: hidden;
+  width: 100%;
+  margin: 28px 0 34px;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 10%, #000 90%, transparent 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, #000 10%, #000 90%, transparent 100%);
+}
+.car-track {
+  display: flex;
+  gap: 12px;
+  width: max-content;
+  will-change: transform;
+}
+.car-track img {
+  height: 280px;
+  width: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.14);
+  flex-shrink: 0;
+  pointer-events: none;
+  user-select: none;
+}
+.car-track.dep img { height: 340px; }
+
+/* O QUE VAI RECEBER */
+.recv-item {
+  display: flex; align-items: flex-start; gap: 18px;
+  background: #fff; border: 1.5px solid #f0e8e0;
+  border-radius: 18px; padding: 26px 22px; margin-bottom: 18px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+.recv-item h3 { font-size: 21px; font-weight: 900; margin-bottom: 10px; color: #111; line-height: 1.2; }
+.recv-item p  { font-size: 18px; font-weight: 700; color: #111; line-height: 1.65; }
+
+/* DOIS MÉTODOS */
+.dois-metodos { display: flex; flex-direction: column; gap: 16px; margin-bottom: 28px; }
+.metodo-card {
+  border-radius: 16px; padding: 22px 18px;
+  border: 2px solid; position: relative;
+}
+.metodo-card.com-costura { background: #FFF0E0; border-color: #FF6B00; }
+.metodo-card.sem-costura { background: #f0fdf4; border-color: #22c55e; }
+.metodo-card .mc-num {
+  font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: 900;
+  margin-bottom: 8px;
+}
+.metodo-card.com-costura .mc-num { color: #FF6B00; }
+.metodo-card.sem-costura .mc-num { color: #16803a; }
+.metodo-card h3 { font-size: 17px; font-weight: 900; margin-bottom: 8px; color: #111; }
+.metodo-card p { font-size: 14px; font-weight: 600; color: #222; line-height: 1.6; }
+.metodo-card .mc-tag {
+  display: inline-block; border-radius: 50px; padding: 4px 14px;
+  font-size: 11px; font-weight: 800; margin-bottom: 10px;
+}
+.metodo-card.com-costura .mc-tag { background: #FF6B00; color: #fff; }
+.metodo-card.sem-costura .mc-tag { background: #22c55e; color: #fff; }
+.access-banner { background: linear-gradient(135deg, #FF6B00, #e05500); border-radius: 16px; padding: 20px; text-align: center; color: #fff; margin-top: 24px; }
+.access-banner .ab-icons { font-size: 26px; margin-bottom: 8px; }
+.access-banner h3 { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 900; margin-bottom: 6px; }
+.access-banner p { font-size: 13px; opacity: 0.92; line-height: 1.5; }
+
+/* CALCULADORA */
+.calc-box {
+  background: linear-gradient(165deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
+  border-radius: 20px; padding: 28px 20px;
+  border: 2.5px solid #FF6B00;
+  box-shadow: 0 8px 32px rgba(255,107,0,0.22);
+}
+.calc-box h3 {
+  font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 900;
+  color: #fff; text-align: center; margin-bottom: 6px;
+}
+.calc-box .calc-sub {
+  font-size: 13px; color: #ccc; text-align: center; margin-bottom: 22px; line-height: 1.5;
+}
+.calc-field { margin-bottom: 18px; }
+.calc-field label { display: block; font-size: 13px; font-weight: 800; color: #FFB066; margin-bottom: 8px; }
+.calc-field input {
+  width: 100%; padding: 14px 16px; border-radius: 12px;
+  background: rgba(255,255,255,0.1); border: 1.5px solid rgba(255,255,255,0.2);
+  color: #fff; font-size: 16px; font-weight: 700; font-family: 'Nunito', sans-serif;
+  outline: none; transition: border-color .2s;
+}
+.calc-field input::placeholder { color: rgba(255,255,255,0.3); }
+.calc-field input:focus { border-color: #FF6B00; }
+.calc-results {
+  background: rgba(255,107,0,0.1); border: 1.5px solid rgba(255,107,0,0.3);
+  border-radius: 16px; padding: 20px; margin-top: 20px;
+}
+.calc-result-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.calc-result-row:last-child { border-bottom: none; }
+.calc-result-row .cr-label { font-size: 13px; font-weight: 700; color: #ccc; }
+.calc-result-row .cr-value { font-size: 15px; font-weight: 900; color: #fff; }
+.calc-result-row.highlight .cr-label { color: #FFB066; font-size: 14px; }
+.calc-result-row.highlight .cr-value { color: #FF6B00; font-size: 20px; }
+.calc-result-row.mega .cr-label { color: #FFD600; font-size: 15px; font-family: 'Montserrat', sans-serif; }
+.calc-result-row.mega .cr-value { color: #FFD600; font-size: 26px; font-family: 'Montserrat', sans-serif; }
+.calc-copy {
+  background: rgba(255,255,255,0.05); border-radius: 12px;
+  padding: 14px; margin-top: 16px; text-align: center;
+  font-size: 13px; color: #ccc; line-height: 1.6;
+}
+.calc-copy strong { color: #FFB066; }
+
+/* BENEFÍCIOS */
+.ben-card {
+  background: #fff; border-radius: 18px; padding: 26px 22px; margin-bottom: 18px;
+  display: flex; gap: 18px; align-items: flex-start;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  border: 1.5px solid #f0e8e0;
+}
+.ben-card h3 { font-size: 21px; font-weight: 900; margin-bottom: 10px; color: #111; line-height: 1.2; }
+.ben-card p  { font-size: 18px; font-weight: 700; color: #111; line-height: 1.65; }
+
+/* BÔNUS */
+.bonus-header { text-align: center; margin-bottom: 32px; }
+.bonus-tag {
+  display: inline-block;
+  background: linear-gradient(135deg,#FF6B00,#FF9A38);
+  color: #fff; font-family: 'Montserrat', sans-serif;
+  font-size: 15px; font-weight: 900;
+  padding: 10px 26px; border-radius: 50px; margin-bottom: 12px; letter-spacing: 0.5px;
+}
+.bonus-header .sub { font-size: 17px; font-weight: 900; color: #FF6B00; line-height: 1.4; }
+.bonus-header .sub span { color: #e05500; }
+
+.bonus-card {
+  background: #fff; border-radius: 20px; padding: 30px 22px 26px;
+  margin-bottom: 22px; text-align: center;
+  border: 1.5px solid #f0e8e0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  position: relative;
+}
+.bonus-card .book-mock {
+  width: 210px; height: 160px; border-radius: 16px;
+  margin: 0 auto 22px; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 52px;
+}
+.bonus-card h3 { font-size: 21px; font-weight: 900; color: #111; margin-bottom: 10px; line-height: 1.25; }
+.bonus-card .val {
+  font-size: 19px; color: #333;
+  display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 4px;
+}
+.bonus-card .val s { color: #888; font-size: 17px; }
+.bonus-card .val strong { color: #FF6B00; font-size: 20px; font-weight: 900; }
+.bonus-card .desc { font-size: 17px; font-weight: 700; color: #111; margin-top: 12px; line-height: 1.65; }
+
+.bonus-total-box {
+  background: linear-gradient(135deg,#FF6B00,#e05500);
+  color: #fff; text-align: center; border-radius: 18px; padding: 30px 22px;
+  font-family: 'Montserrat', sans-serif; font-weight: 900; line-height: 1.3;
+  margin-bottom: 24px;
+}
+.bonus-total-box .bt-line1 { font-size: 17px; margin-bottom: 6px; color: #FFE0B2; }
+.bonus-total-box .bt-line2 { font-size: 26px; color: #FFD600; margin-bottom: 6px; }
+.bonus-total-box .bt-line3 { font-size: 15px; color: #fff; font-weight: 700; margin-bottom: 20px; }
+
+/* PLANOS */
+.plan-basic {
+  background: #f5f5f5; border-radius: 18px; padding: 28px 22px;
+  margin-bottom: 14px; border: 1.5px solid #ddd;
+  text-align: center; opacity: 0.85;
+}
+.plan-basic h2 { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 800; color: #333; margin-bottom: 12px; }
+.plan-basic .price { font-family: 'Montserrat', sans-serif; font-size: 44px; font-weight: 900; color: #000; line-height: 1; }
+.plan-basic .price sup { font-size: 20px; }
+.plan-basic .price span { font-size: 24px; }
+.plan-basic .note { font-size: 13px; color: #555; margin: 8px 0 18px; }
+.plan-basic ul { list-style: none; text-align: left; margin-bottom: 20px; }
+.plan-basic ul li {
+  font-size: 15px; color: #222; padding: 10px 0;
+  display: flex; gap: 10px; align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+.plan-basic ul li::before { content: '✓'; color: #888; font-weight: 900; flex-shrink: 0; }
+.plan-basic .limit-note {
+  font-size: 13px; color: #111; margin-bottom: 18px;
+  background: #e8e8e8; border-radius: 8px; padding: 12px;
+  font-style: italic; font-weight: 700;
+}
+.urgencia-mid {
+  background: #111; color: #fff; border-radius: 16px;
+  padding: 22px; text-align: center; margin: 8px 0 20px;
+}
+.urgencia-mid .top-line {
+  font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 900;
+  color: #FF6B00; margin-bottom: 10px;
+}
+.urgencia-mid .sub-line { font-size: 15px; color: #eee; line-height: 1.6; }
+.urgencia-mid .sub-line strong { color: #FF6B00; }
+.urgencia-mid .arrows { font-size: 20px; margin-top: 14px; color: #FF6B00; letter-spacing: 6px; }
+
+/* PLANO PREMIUM */
+.plan-premium {
+  background: linear-gradient(165deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
+  border-radius: 20px; padding: 22px 22px 30px;
+  border: 2.5px solid #FF6B00;
+  text-align: center; position: relative;
+  box-shadow: 0 8px 32px rgba(255,107,0,0.25), 0 0 60px rgba(255,107,0,0.08);
+  margin-bottom: 14px;
+}
+.plan-premium h2 { font-family: 'Montserrat', sans-serif; font-size: 24px; font-weight: 900; color: #fff; margin-bottom: 10px; }
+.plan-old { font-size: 15px; color: #aaa; text-decoration: line-through; margin-bottom: 2px; }
+.plan-price { font-family: 'Montserrat', sans-serif; font-size: 56px; font-weight: 900; color: #FF6B00; line-height: 1; text-shadow: 0 0 20px rgba(255,107,0,0.3); }
+.plan-price sup { font-size: 26px; }
+.plan-price span { font-size: 28px; }
+.plan-parcel { font-size: 15px; color: #ccc; margin: 8px 0 12px; }
+.plan-social {
+  display: inline-block; background: rgba(22,128,58,0.15);
+  border: 1px solid rgba(22,128,58,0.3);
+  color: #4ade80; font-size: 14px; font-weight: 700;
+  border-radius: 10px; padding: 10px 16px; margin-bottom: 20px;
+}
+.plan-mockup{
+  position:relative;
+  text-align:center;
+  margin:18px 0 22px;
+}
+
+.plan-mockup::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  width:220px;
+  height:220px;
+  background:rgba(255,107,0,.18);
+  filter:blur(40px);
+  border-radius:50%;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  z-index:0;
+}
+
+.plan-mockup img{
+  position:relative;
+  z-index:1;
+  width:100%;
+  max-width:320px;
+  height:auto;
+  display:block;
+  margin:auto;
+  border-radius:18px;
+
+  filter: drop-shadow(0 14px 30px rgba(0,0,0,.35));
+
+  transition:.3s ease;
+}
+
+.plan-mockup img:hover{
+  transform:translateY(-4px) scale(1.03);
+}
+.social-proof { display: flex; align-items: center; justify-content: center; gap: 10px; }
+.plan-price-box { margin-top: 8px; margin-bottom: 16px; }
+.pp-badge {
+  position: absolute; top: -16px; left: 50%; transform: translateX(-50%);
+  background: linear-gradient(135deg,#FF6B00,#e05500); color: #fff;
+  font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 900;
+  padding: 6px 24px; border-radius: 50px; white-space: nowrap;
+}
+.plan-feats { list-style: none; text-align: left; margin-bottom: 22px; }
+.plan-feats li {
+  font-size: 16px; color: #e8e8e8; padding: 10px 0;
+  display: flex; gap: 10px; align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.plan-feats li::before { content: '✓'; color: #4ade80; font-weight: 900; flex-shrink: 0; }
+.plan-cta-sub { font-size: 14px; color: #bbb; margin-bottom: 12px; }
+.pay-row { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-top: 18px; }
+.pay-chip {
+  background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.15);
+  color: #ddd; border-radius: 8px; padding: 7px 14px;
+  font-size: 13px; font-weight: 700;
+}
+.urgencia-last {
+  background: #E53935; border: 1.5px solid #B71C1C;
+  border-radius: 14px; padding: 20px; text-align: center;
+  margin-top: 18px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.urgencia-last .ul-title { font-size: 17px; font-weight: 900; color: #fff; margin-bottom: 6px; }
+.urgencia-last .ul-sub { font-size: 15px; color: #fff; }
+
+/* GARANTIA */
+.garantia-box {
+  background: linear-gradient(135deg,#f0fdf4,#dcfce7);
+  border: 2px solid #22c55e; border-radius: 20px; padding: 34px 22px; text-align: center;
+}
+.garantia-img { width: 110px; height: auto; margin-bottom: 16px; }
+.garantia-box h2 { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 900; color: #16803a; margin-bottom: 12px; }
+.garantia-box p { font-size: 16px; color: #333; line-height: 1.7; }
+.garantia-selos { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-top: 18px; }
+.garantia-selo { background: #fff; border: 1.5px solid #b2e8c8; border-radius: 10px; padding: 8px 14px; font-size: 12px; font-weight: 700; color: #16803a; }
+
+/* DEPOIMENTOS */
+.avg { text-align: center; margin-bottom: 24px; }
+.avg .stars { color: #f59e0b; font-size: 24px; letter-spacing: 2px; }
+.avg .num { font-family: 'Montserrat', sans-serif; font-size: 36px; font-weight: 900; color: #FF6B00; line-height: 1; }
+.avg small { font-size: 14px; color: #555; }
+
+/* CARROSSEL DEPOIMENTOS (com setas) */
+.dep-carousel-wrap { position: relative; display: flex; align-items: center; gap: 0; margin: 0 -4px; }
+.dep-carousel-viewport { flex: 1; overflow: hidden; border-radius: 18px; }
+.dep-carousel-track { display: flex; transition: transform 0.38s cubic-bezier(.4,0,.2,1); will-change: transform; }
+.dep-slide { min-width: 100%; padding: 0 4px; }
+.dep-img-placeholder { border-radius: 16px; overflow: hidden; background: #1a1a2e; position: relative; min-height: 280px; display: flex; align-items: center; justify-content: center; }
+.dep-img-placeholder img { width: 100%; height: auto; display: block; border-radius: 16px; object-fit: contain; }
+.dep-arrow { flex-shrink: 0; width: 38px; height: 38px; border-radius: 50%; background: #FF6B00; color: #fff; border: none; font-size: 22px; font-weight: 900; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 10px rgba(255,107,0,0.35); transition: transform .15s, background .15s; z-index: 2; padding: 0; }
+.dep-arrow:hover { background: #e05500; transform: scale(1.08); }
+.dep-prev { margin-right: 8px; }
+.dep-next { margin-left: 8px; }
+.dep-dots { display: flex; justify-content: center; gap: 8px; margin-top: 16px; }
+.dep-dot { width: 9px; height: 9px; border-radius: 50%; background: #c8d8ee; cursor: pointer; transition: background .2s, width .2s; border: none; padding: 0; display: inline-block; }
+.dep-dot.active { background: #FF6B00; width: 22px; border-radius: 5px; }
+
+/* AUTORA */
+.autora {
+  text-align: center;
+}
+
+/* FOTO */
+.autora-foto{
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.autora-foto img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.autora h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.autora .cargo {
+  font-size: 14px;
+  color: #FF6B00;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin: 18px 0;
+}
+
+.stat-i {
+  text-align: center;
+}
+
+.stat-i .sn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: #FF6B00;
+}
+
+.stat-i .sl {
+  font-size: 13px;
+  color: #444;
+}
+
+.faturamento-box{
+  background: linear-gradient(135deg,#fff4e8,#ffe1bf);
+  border: 2px solid #FF6B00;
+  border-radius: 18px;
+  padding: 20px;
+  margin-top: 22px;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 700;
+  color: #111;
+  box-shadow: 0 6px 18px rgba(255,107,0,.12);
+}
+
+.faturamento-box strong{
+  color: #d94800;
+}
+
+.autora-av img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.autora h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.autora .cargo {
+  font-size: 14px;
+  color: #FF6B00;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin: 18px 0;
+}
+
+.stat-i { text-align: center; }
+
+.stat-i .sn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: #FF6B00;
+}
+
+.stat-i .sl {
+  font-size: 13px;
+  color: #444;
+}
+
+.autora blockquote {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+/* DESTAQUE FATURAMENTO */
+.frase-destaque{
+  display:inline-block;
+  background:linear-gradient(135deg,#FF6B00,#ff8c32);
+  color:#fff;
+  font-weight:900;
+  padding:4px 10px;
+  border-radius:8px;
+  margin:4px 0;
+  box-shadow:0 4px 14px rgba(255,107,0,.28);
+}
+
+/* FAQ */
+.faq-title { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 900; text-align: center; margin-bottom: 22px; color: #111; }
+.faq-item { background: #fff; border-radius: 14px; margin-bottom: 12px; overflow: hidden; border: 1px solid #f0e8e0; }
+.faq-q {
+  padding: 20px 18px; font-size: 16px; font-weight: 700; color: #111;
+  cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+  user-select: none; gap: 12px;
+}
+.faq-q::after { content: '▼'; font-size: 12px; color: #FF6B00; transition: transform .2s; flex-shrink: 0; }
+.faq-item.open .faq-q::after { transform: rotate(180deg); }
+.faq-a { display: none; padding: 0 18px 20px; font-size: 15px; color: #222; line-height: 1.7; }
+.faq-item.open .faq-a { display: block; }
+
+/* HOW STEPS */
+.how-steps { display: flex; flex-direction: column; align-items: center; }
+.how-step { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 12px; }
+.how-step .step-icon { width: 60px; height: 60px; border-radius: 50%; background: #FFF0E0; display: flex; align-items: center; justify-content: center; font-size: 26px; margin-bottom: 10px; }
+.how-step h4 { font-size: 15px; font-weight: 800; color: #FF6B00; margin-bottom: 5px; }
+.how-step p  { font-size: 13px; color: #222; line-height: 1.5; max-width: 260px; }
+.step-connector { width: 2px; height: 24px; background: #f0e8e0; }
+
+/* FOOTER */
+footer { background: #111; color: #aaa; text-align: center; padding: 30px 22px; font-size: 13px; line-height: 1.9; }
+footer a { color: #FF6B00; text-decoration: none; }
+
+/* POPUP DOWNSELL */
+#popup-downsell { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.82); z-index:99999; align-items:flex-start; justify-content:center; padding:12px; overflow-y:auto; }
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .car-track img { height: 380px !important; }
+  .car-wrap { margin: 22px 0 30px !important; }
+  .sec { padding: 44px 16px; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  +350 artesãs já lucrando • OFERTA EXPIRA EM: <span id="data-hoje"></span>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>
+    <span class="highlight-underline">+200 Moldes</span> de Pantufas<br>
+    + <span>Video Aulas Passo a Passo</span>
+  </h1>
+
+  <div style="margin: 14px auto 16px; text-align:center;">
+    <div style="font-size:80px;">🧵</div>
+  </div>
+
+  <div class="metodo-row">
+    <div class="metodo-badge costura">
+      <span class="mb-icon">🧵</span>
+      <strong>COM Costura</strong>
+      <div class="mb-label">Máquina doméstica</div>
+    </div>
+    <div class="metodo-badge sem-costura">
+      <span class="mb-icon">✂️</span>
+      <strong>SEM Costura</strong>
+      <div class="mb-label">Cola especial + tecido</div>
+    </div>
+  </div>
+
+  <div class="mini-social-proof">
+    <div class="avatars">
+      <img src="https://i.pravatar.cc/40?img=47" alt="">
+      <img src="https://i.pravatar.cc/40?img=25" alt="">
+      <div class="avatar-last">
+        <img src="https://i.pravatar.cc/40?img=38" alt="">
+        <div class="avatar-plus">+</div>
+      </div>
+    </div>
+    <span>+350 artesãs já lucrando nesse inverno</span>
+  </div>
+
+  <p>
+    Aprenda a fazer pantufas artesanais para vender nesse inverno —
+    <span class="destaque">mesmo sem experiência e sem máquina profissional.</span>
+    Do tamanho 15 ao 44 — bebê ao adulto.
+  </p>
+  <a href="#planos" class="btn-cta">QUERO APRENDER E LUCRAR AGORA</a>
+</section>
+<div class="divider"></div>
+
+<!-- O QUE VAI RECEBER -->
+<section class="sec">
+  <h2 class="sec-title">O Que Você Vai <span>Receber</span></h2>
+
+  <div class="car-wrap">
+    <div class="car-track" id="car1">
+      <img src="img/receber1.webp" alt="Molde 1">
+      <img src="img/receber2.webp" alt="Molde 2">
+      <img src="img/receber3.webp" alt="Molde 3">
+      <img src="img/receber4.webp" alt="Molde 4">
+      <img src="img/receber5.webp" alt="Molde 5">
+      <img src="img/receber6.webp" alt="Molde 6">
+    </div>
+  </div>
+
+  <div class="recv-item">
+    <div class="icon-wrap">
+      <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+    </div>
+    <div>
+      <h3>+200 Moldes Prontos para Imprimir</h3>
+      <p>Do tamanho 15 ao 44 — bebê, criança e adulto. Modelos clássicos, bichinhos e personagens. Imprima, corte e já comece a produzir.</p>
+    </div>
+  </div>
+
+  <div class="recv-item">
+    <div class="icon-wrap">
+      <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+    </div>
+    <div>
+      <h3>Video Aulas Passo a Passo Completas</h3>
+      <p>Explicações claras para iniciantes. Aprenda na máquina doméstica comum — sem precisar de equipamento profissional.</p>
+    </div>
+  </div>
+
+  <div class="recv-item">
+    <div class="icon-wrap">
+      <svg viewBox="0 0 24 24"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+    </div>
+    <div>
+      <h3>Acesso Digital Completo e Vitalício</h3>
+      <p>Acesse por celular, tablet ou computador a qualquer hora. Liberado automaticamente após a compra — sem esperar nada chegar pelo correio.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DOIS MÉTODOS -->
+<section class="sec alt">
+  <h2 class="sec-title">Duas Formas de <span>Fazer Pantufas</span></h2>
+  <p style="text-align:center;font-size:16px;color:#222;margin-bottom:24px;line-height:1.6;">Você escolhe a forma que se encaixa na sua realidade. As duas são ensinadas no material completo.</p>
+
+  <div class="dois-metodos">
+    <div class="metodo-card com-costura">
+      <div class="mc-num">1</div>
+      <span class="mc-tag">COM COSTURA</span>
+      <h3>Na Máquina Doméstica</h3>
+      <p>O método mais tradicional e resistente. Funciona em qualquer máquina de costura doméstica simples — não precisa de máquina industrial. Resultado profissional e durável.</p>
+    </div>
+    <div class="metodo-card sem-costura">
+      <div class="mc-num">2</div>
+      <span class="mc-tag">SEM COSTURA</span>
+      <h3>Com Cola Especial e Tecido</h3>
+      <p>Ideal para quem não tem máquina de costura. Mais rápido de fazer e perfeito para iniciantes. O acabamento fica lindo e profissional do mesmo jeito.</p>
+    </div>
+  </div>
+
+  <div class="access-banner">
+    <div class="ab-icons">✂️ 🧵</div>
+    <h3>Você aprende os dois métodos!</h3>
+    <p>Não importa sua situação — com ou sem máquina — você vai sair do zero e estar produzindo pantufas para vender.</p>
+  </div>
+</section>
+
+<!-- CALCULADORA -->
+<section class="sec">
+  <h2 class="sec-title">Calcule Seu <span>Lucro</span></h2>
+  <p style="text-align:center;font-size:16px;color:#222;margin-bottom:24px;line-height:1.6;">Descubra quanto você pode ganhar por mês vendendo pantufas artesanais.</p>
+
+  <div class="calc-box">
+    <h3>Simulador de Renda</h3>
+    <p class="calc-sub">Ajuste os valores e veja quanto você pode lucrar com pantufas artesanais</p>
+
+    <div class="calc-field">
+      <label>Quantos pares você pretende vender por dia?</label>
+      <input type="number" id="calc-pares" value="3" min="1" max="50" placeholder="Ex: 3">
+    </div>
+    <div class="calc-field">
+      <label>Qual será o preço de venda por par (R$)?</label>
+      <input type="number" id="calc-preco" value="60" min="30" max="150" placeholder="Ex: 60">
+    </div>
+    <div class="calc-field">
+      <label>Custo de material (R$ 12 a 14)</label>
+      <input type="range" id="calc-custo" value="13" min="12" max="14" step="0.5" style="width:100%;cursor:pointer;">
+      <div style="font-size:12px;color:#ccc;text-align:center;margin-top:6px;">Custo: <strong style="color:#FFB066;" id="custo-display">R$ 13,00</strong></div>
+    </div>
+
+    <div class="calc-results">
+      <div class="calc-result-row">
+        <span class="cr-label">Custo de material por par</span>
+        <span class="cr-value" id="r-custo">R$ 13,00</span>
+      </div>
+      <div class="calc-result-row">
+        <span class="cr-label">Lucro por par</span>
+        <span class="cr-value" id="r-par">—</span>
+      </div>
+      <div class="calc-result-row">
+        <span class="cr-label">Faturamento por dia</span>
+        <span class="cr-value" id="r-dia-fat">—</span>
+      </div>
+      <div class="calc-result-row">
+        <span class="cr-label">Lucro por dia</span>
+        <span class="cr-value" id="r-dia">—</span>
+      </div>
+      <div class="calc-result-row">
+        <span class="cr-label">Lucro por semana</span>
+        <span class="cr-value" id="r-semana">—</span>
+      </div>
+      <div class="calc-result-row highlight">
+        <span class="cr-label">Lucro mensal (22 dias úteis)</span>
+        <span class="cr-value" id="r-mes">—</span>
+      </div>
+      <div class="calc-result-row mega">
+        <span class="cr-label">Seu lucro anual estimado</span>
+        <span class="cr-value" id="r-ano">—</span>
+      </div>
+    </div>
+    <div class="calc-copy" id="calc-copy">Preencha os campos acima para ver sua projeção de lucro.</div>
+  </div>
+</section>
+
+<!-- BENEFÍCIOS -->
+<section class="sec alt">
+  <h2 class="sec-title">Benefícios <span>Exclusivos</span></h2>
+
+  <div class="ben-card">
+    <div class="icon-wrap">
+      <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+    </div>
+    <div>
+      <h3>Todo Mundo Precisa no Inverno</h3>
+      <p>Pantufas artesanais têm altíssima demanda no frio. Família, amigos, colegas — todo mundo quer comprar. Mercado enorme, concorrência local baixa.</p>
+    </div>
+  </div>
+
+  <div class="ben-card">
+    <div class="icon-wrap">
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    </div>
+    <div>
+      <h3>Venda Pelo WhatsApp Sem Sair de Casa</h3>
+      <p>Sem loja, sem feira, sem investimento alto. Fotografa, manda no grupo da família e começa a receber encomendas. Simples assim.</p>
+    </div>
+  </div>
+
+  <div class="ben-card">
+    <div class="icon-wrap">
+      <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    </div>
+    <div>
+      <h3>Lucro Alto com Custo Baixo</h3>
+      <p>Material custa entre R$8 e R$15 por par. Você vende entre R$40 e R$80. Um dos artesanatos com maior margem de lucro do mercado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMO RECEBER -->
+<section class="sec">
+  <h2 class="sec-title">Como Vou Receber o <span>Material?</span></h2>
+  <div class="how-steps">
+    <div class="how-step">
+      <div class="step-icon">⚡</div>
+      <h4>Acesso liberado na hora</h4>
+      <p>Seu acesso é liberado automaticamente após a confirmação da compra. Sem espera.</p>
+    </div>
+    <div class="step-connector"></div>
+    <div class="how-step">
+      <div class="step-icon">📱</div>
+      <h4>Assista pelo celular</h4>
+      <p>Acesse as videoaulas e os moldes de qualquer lugar, pelo celular ou computador.</p>
+    </div>
+    <div class="step-connector"></div>
+    <div class="how-step">
+      <div class="step-icon">🧵</div>
+      <h4>Faça e venda</h4>
+      <p>Já no primeiro dia você consegue fazer seus primeiros pares e começar a vender.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BÔNUS -->
+<section class="sec alt">
+  <div class="bonus-header">
+    <div class="bonus-tag">BÔNUS EXCLUSIVOS</div><br>
+    <span class="sub">ECONOMIZE MAIS DE R$90 — HOJE VOCÊ RECEBE <span>GRÁTIS</span></span>
+  </div>
+
+  <div class="bonus-card">
+    <img src="img/bonus1.webp" alt="Como Calcular o Preço de Venda" style="width:100%;height:auto;border-radius:12px;margin-bottom:14px;">
+    <h3>Como Calcular o Preço de Venda</h3>
+    <div class="val"><s>R$29</s> <strong>GRÁTIS</strong></div>
+    <p class="desc">Aprenda a precificar seus pares corretamente para garantir o máximo de lucro. Nunca mais venda abaixo do valor que você merece.</p>
+  </div>
+
+  <div class="bonus-card">
+    <img src="img/bonus2.webp" alt="Onde Comprar Material Mais Barato" style="width:100%;height:auto;border-radius:12px;margin-bottom:14px;">
+    <h3>Onde Comprar Material Mais Barato</h3>
+    <div class="val"><s>R$19</s> <strong>GRÁTIS</strong></div>
+    <p class="desc">Lista completa de fornecedores com os melhores preços. Reduza seu custo e aumente sua margem desde o primeiro par.</p>
+  </div>
+
+  <div class="bonus-card">
+    <img src="img/bonus3.webp" alt="Ideias de Customização para Vender Mais" style="width:100%;height:auto;border-radius:12px;margin-bottom:14px;">
+    <h3>Ideias de Customização para Vender Mais</h3>
+    <div class="val"><s>R$24</s> <strong>GRÁTIS</strong></div>
+    <p class="desc">Personalizações que fazem seus pares se destacarem e justificam cobrar mais. Pantufas temáticas, presentes, personalizadas com nomes e muito mais.</p>
+  </div>
+
+  <div class="bonus-card">
+    <img src="img/bonus4.webp" alt="Frases Prontas para Vender no WhatsApp" style="width:100%;height:auto;border-radius:12px;margin-bottom:14px;">
+    <h3>Frases Prontas para Vender no WhatsApp</h3>
+    <div class="val"><s>R$19</s> <strong>GRÁTIS</strong></div>
+    <p class="desc">Textos prontos para divulgar suas pantufas no WhatsApp, grupos e Facebook. Copie, cole e comece a receber pedidos imediatamente.</p>
+  </div>
+
+  <div class="bonus-total-box">
+    <div class="bt-line1">Você economiza mais de</div>
+    <div class="bt-line2">+ de <s style="color:rgba(255,255,255,0.45);font-size:22px;">R$100</s> EM BÔNUS GRÁTIS!</div>
+    <div class="bt-line3">Tudo isso incluso no Plano Completo por apenas R$37,00</div>
+    <a href="#planos" class="btn-cta green pulse" style="font-size:19px;">QUERO APROVEITAR 🔥</a>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- PLANOS -->
+<section class="sec" id="planos">
+  <h2 class="sec-title">Escolha Seu <span>Plano</span></h2>
+
+  <div class="plan-premium">
+    
+    <div class="pp-badge">⭐ MAIS POPULAR</div>
+
+    <h2>Plano Completo</h2>
+
+    <!-- MOCKUP -->
+    <div class="plan-mockup">
+      <img src="img/mockup.webp" alt="Mockup Curso de Pantufas">
+    </div>
+
+    <div class="plan-price-box">
+      <div class="plan-old">De R$ 197,00</div>
+
+      <div class="plan-price">
+        <sup>R$</sup>37<span>,00</span>
+      </div>
+
+      <div class="plan-parcel">
+        Ou 3x de R$ 12,33 no cartão
+      </div>
+
+      <span style="display:inline-block;background:#C0392B;color:#fff;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:900;border-radius:4px;padding:3px 10px;margin-top:5px;">
+        79% OFF
+      </span>
+    </div>
+
+    <div class="plan-social">
+      <div class="social-proof">
+
+        <div class="avatars">
+          <img src="https://i.pravatar.cc/40?img=47" alt="">
+          <img src="https://i.pravatar.cc/40?img=25" alt="">
+
+          <div class="avatar-last">
+            <img src="https://i.pravatar.cc/40?img=38" alt="">
+            <div class="avatar-plus">+</div>
+          </div>
+        </div>
+
+        <span>+350 artesãs já lucraram com pantufas nesse inverno
+
+      </div>
+    </div>
+
+    <ul class="plan-feats">
+      <li>+200 Moldes Prontos para Imprimir (do 15 ao 44)</li>
+      <li>Videoaulas passo a passo completas</li>
+      <li>Método COM costura (máquina doméstica)</li>
+      <li>Método SEM costura (cola especial)</li>
+      <li>Modelos clássicos, bichinhos e personagens</li>
+      <li>Como fazer acabamento profissional</li>
+      <li>Quanto cobrar por cada par</li>
+      <li>Acesso digital e vitalício</li>
+      <li>Suporte prioritário</li>
+      <li>Garantia de 7 dias</li>
+      <li>🎁 BÔNUS: Como calcular o preço de venda</li>
+      <li>🎁 BÔNUS: Onde comprar material mais barato</li>
+      <li>🎁 BÔNUS: Ideias de customização</li>
+      <li>🎁 BÔNUS: Frases prontas para vender no WhatsApp</li>
+    </ul>
+
+    <div class="plan-cta-sub">
+      Clique no botão abaixo e garanta já o seu! ↴
+    </div>
+
+    <a href="https://checkout.essenciapro.site/PANTUFAS" class="btn-cta green pulse">
+      SIM, QUERO O PLANO COMPLETO
+    </a>
+
+    <div class="pay-row">
+      <span class="pay-chip">✅ Satisfação Garantida</span>
+      <span class="pay-chip">🔒 Compra Segura</span>
+      <span class="pay-chip">⚡ Acesso Imediato</span>
+    </div>
+
+  </div>
+
+  <div class="urgencia-last">
+    <div class="ul-title">⏰ Último dia com desconto do Material Completo</div>
+    <div class="ul-sub">A partir de <span id="prox-dia"></span>, o preço será ajustado.</div>
+  </div>
+
+</section>
+
+<!-- GARANTIA -->
+<section class="sec">
+  <h2 class="sec-title">RISCO ZERO! SUA SATISFAÇÃO OU SEU <span>DINHEIRO DE VOLTA</span></h2>
+  <div class="garantia-box">
+    <div style="font-size:80px;text-align:center;margin-bottom:16px;">🛡️</div>
+    <h2>7 Dias de Garantia Total</h2>
+    <p>Você tem 7 dias para testar tudo. Se não gostar, devolvemos 100% do seu dinheiro sem perguntas, sem burocracia, sem discussão.</p>
+    <div class="garantia-selos">
+      <div class="garantia-selo">🔒 Compra Segura</div>
+      <div class="garantia-selo">✅ Satisfação Garantida</div>
+      <div class="garantia-selo">⚡ Acesso Imediato</div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="sec alt">
+  <h2 class="sec-title">Resultados Reais de Quem <span>Já Aplica</span></h2>
+  <div class="avg">
+    <div class="stars">★★★★★</div>
+    <div class="num">4.9/5</div>
+    <small>350 avaliações</small>
+  </div>
+
+  <div class="dep-carousel-wrap">
+    <button class="dep-arrow dep-prev" onclick="depSlide(-1)">&#8249;</button>
+    <div class="dep-carousel-viewport">
+      <div class="dep-carousel-track" id="depTrack">
+        <div class="dep-slide"><div class="dep-img-placeholder"><img src="img/depoimento1.webp" alt="Depoimento 1"></div></div>
+        <div class="dep-slide"><div class="dep-img-placeholder"><img src="img/depoimento2.webp" alt="Depoimento 2"></div></div>
+        <div class="dep-slide"><div class="dep-img-placeholder"><img src="img/depoimento3.webp" alt="Depoimento 3"></div></div>
+        <div class="dep-slide"><div class="dep-img-placeholder"><img src="img/depoimento4.webp" alt="Depoimento 4"></div></div>
+        <div class="dep-slide"><div class="dep-img-placeholder"><img src="img/depoimento5.webp" alt="Depoimento 5"></div></div>
+      </div>
+    </div>
+    <button class="dep-arrow dep-next" onclick="depSlide(1)">&#8250;</button>
+  </div>
+  <div class="dep-dots" id="depDots">
+    <span class="dep-dot active" onclick="depGoTo(0)"></span>
+    <span class="dep-dot" onclick="depGoTo(1)"></span>
+    <span class="dep-dot" onclick="depGoTo(2)"></span>
+    <span class="dep-dot" onclick="depGoTo(3)"></span>
+    <span class="dep-dot" onclick="depGoTo(4)"></span>
+  </div>
+</section>
+<!-- AUTORA -->
+<section class="sec autora">
+  <h2 class="sec-title">Sobre a <span>Instrutora</span></h2>
+
+  <!-- FOTO DA AUTORA -->
+  <div class="autora-foto">
+    <img src="img/autora.webp" alt="Roseli Ribeiro">
+  </div>
+
+  <h3>Roseli Ribeiro</h3>
+
+  <div class="cargo">
+    Artesã Especialista em Pantufas Artesanais
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-i">
+      <div class="sn">20+</div>
+      <div class="sl">anos como artesã</div>
+    </div>
+
+    <div class="stat-i">
+      <div class="sn">350+</div>
+      <div class="sl">alunas ensinadas</div>
+    </div>
+
+    <div class="stat-i">
+      <div class="sn">R$15k+</div>
+      <div class="sl">só no inverno de 2025</div>
+    </div>
+  </div>
+
+  <div class="faturamento-box">
+    Esse método foi o mesmo que me fez faturar mais de 
+    <strong>R$15.000 apenas no inverno de 2025</strong>,
+    trabalhando nos meus horários, de casa, fazendo o que eu amo.
+  </div>
+
+  <blockquote style="margin-top:22px;font-size:15px;font-style:italic;line-height:1.7;color:#222;">
+    “Desenvolvi esse material para ajudar mulheres que querem trabalhar de casa com o que gostam — e ganhar dinheiro de verdade com isso. Pantufas são simples, fáceis e vendem o ano todo.”
+  </blockquote>
+
+</section>
+
+<!-- FAQ -->
+<section class="sec alt">
+  <div class="faq-title">
+    AINDA COM DÚVIDAS? VEJA AS PERGUNTAS FREQUENTES
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">
+      Preciso ter experiência com costura?
+    </div>
+    <div class="faq-a">
+      Não! O material foi desenvolvido para iniciantes absolutas. 
+      Ensinamos desde o básico, com calma e clareza. 
+      Qualquer pessoa consegue aprender.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">
+      E se eu não tiver máquina de costura?
+    </div>
+    <div class="faq-a">
+      Sem problema! Ensinamos também o método sem costura, 
+      utilizando cola especial e tecido. 
+      O acabamento fica lindo e profissional.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">
+      Quais tamanhos estão inclusos nos moldes?
+    </div>
+    <div class="faq-a">
+      Os moldes vão do tamanho 15 ao 44 — do bebê ao adulto. 
+      Assim você consegue vender para toda a família.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">
+      Quanto tempo leva para fazer um par?
+    </div>
+    <div class="faq-a">
+      Com um pouco de prática, entre 30 minutos e 1 hora por par. 
+      Conforme você ganha experiência, a produção fica cada vez mais rápida.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">
+      Como recebo o material após a compra?
+    </div>
+    <div class="faq-a">
+      Após a confirmação do pagamento, você recebe imediatamente 
+      o acesso por e-mail. 
+      Pode assistir pelo celular, tablet ou computador.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">
+      Como funciona a garantia?
+    </div>
+    <div class="faq-a">
+      Você tem 7 dias de garantia total. 
+      Se não gostar do material, devolvemos 100% do seu dinheiro.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">
+      O acesso é vitalício?
+    </div>
+    <div class="faq-a">
+      Sim! Você paga apenas uma vez e terá acesso para sempre 
+      aos moldes e às videoaulas.
+    </div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Copyright © <span id="ano-footer"></span> Moldes de Pantufas. Todos os direitos reservados.</p>
+  <p style="margin-top:8px"><a href="#">Política de Privacidade</a> &nbsp;|&nbsp; <a href="#">Termos de Uso</a> &nbsp;|&nbsp; <a href="#">Contato</a></p>
+  <p style="margin-top:10px;font-size:12px;color:#777">Este produto é digital. Após a confirmação do pagamento, o acesso é liberado imediatamente por e-mail.</p>
+</footer>
+
+
+
+<script>
+// DATAS
+function formatarData(d) {
+  return d.getDate().toString().padStart(2,'0') + '/' +
+         (d.getMonth()+1).toString().padStart(2,'0') + '/' +
+         d.getFullYear();
+}
+var hoje = new Date();
+var elData = document.getElementById('data-hoje');
+if (elData) elData.textContent = formatarData(hoje);
+
+var amanha = new Date(hoje);
+amanha.setDate(amanha.getDate() + 1);
+var elProx = document.getElementById('prox-dia');
+if (elProx) elProx.textContent = formatarData(amanha);
+
+var anoEl = document.getElementById('ano-footer');
+if (anoEl) anoEl.textContent = hoje.getFullYear();
+
+
+
+// CARROSSEL INFINITO (imagens)
+function setupCarousel(trackEl, speed) {
+  if (!trackEl) return;
+
+  const items = Array.from(trackEl.children);
+
+  // DUPLICA APENAS 1 VEZ
+  items.forEach(item => {
+    trackEl.appendChild(item.cloneNode(true));
+  });
+
+  let position = 0;
+  let paused = false;
+  let loopWidth = 0;
+
+  function calculateWidth() {
+    loopWidth = 0;
+
+    items.forEach(item => {
+      loopWidth += item.offsetWidth + 12;
+    });
+  }
+
+  function animate() {
+    if (!paused) {
+      position += speed;
+
+      // quando terminar os itens originais
+      if (position >= loopWidth) {
+        position = 0;
+      }
+
+      trackEl.style.transform =
+        `translateX(-${position}px)`;
+    }
+
+    requestAnimationFrame(animate);
+  }
+
+  const wrap = trackEl.parentElement;
+
+  if (wrap) {
+    wrap.addEventListener('mouseenter', () => paused = true);
+    wrap.addEventListener('mouseleave', () => paused = false);
+
+    wrap.addEventListener('touchstart', () => paused = true, { passive:true });
+    wrap.addEventListener('touchend', () => paused = false, { passive:true });
+  }
+
+  window.addEventListener('resize', calculateWidth);
+
+  calculateWidth();
+  animate();
+}
+
+setupCarousel(document.getElementById('car1'), 0.6);
+
+// CARROSSEL DEPOIMENTOS (com setas)
+var depIdx = 0;
+var depTotal = 5;
+function depGoTo(n){
+  depIdx = n;
+  document.getElementById('depTrack').style.transform = 'translateX(-' + (depIdx * 100) + '%)';
+  document.querySelectorAll('.dep-dot').forEach(function(d, i){
+    d.classList.toggle('active', i === depIdx);
+  });
+}
+function depSlide(dir){ depGoTo((depIdx + dir + depTotal) % depTotal); }
+(function(){
+  var track = document.getElementById('depTrack');
+  if(!track) return;
+  var startX = 0;
+  track.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; }, {passive:true});
+  track.addEventListener('touchend', function(e){
+    var diff = startX - e.changedTouches[0].clientX;
+    if(Math.abs(diff) > 40) depSlide(diff > 0 ? 1 : -1);
+  }, {passive:true});
+})();
+setInterval(function(){ depSlide(1); }, 5000);
+
+// CALCULADORA
+function fmt(v){ return 'R$' + v.toLocaleString('pt-BR', {minimumFractionDigits:2, maximumFractionDigits:2}); }
+
+// Atualizar display do custo quando o slider mudar
+document.getElementById('calc-custo').addEventListener('input', function(){
+  var custo = parseFloat(this.value);
+  document.getElementById('custo-display').textContent = fmt(custo);
+});
+
+function calcular(){
+  var pares = parseFloat(document.getElementById('calc-pares').value) || 0;
+  var preco = parseFloat(document.getElementById('calc-preco').value) || 0;
+  var custo = parseFloat(document.getElementById('calc-custo').value) || 0;
+  if(pares <= 0 || preco <= 0 || custo <= 0){
+    document.getElementById('calc-copy').innerHTML = 'Preencha todos os campos para ver sua projeção de lucro.';
+    ['r-custo','r-par','r-dia-fat','r-dia','r-semana','r-mes','r-ano'].forEach(function(id){ document.getElementById(id).textContent = '—'; });
+    return;
+  }
+  var lucroPar = preco - custo;
+  var fatuDia = pares * preco;
+  var lucroDia = pares * lucroPar;
+  var lucroSemana = lucroDia * 6;
+  var lucroMes = lucroDia * 22;
+  var lucroAno = lucroMes * 12;
+  document.getElementById('r-custo').textContent = fmt(custo);
+  document.getElementById('r-par').textContent = fmt(lucroPar);
+  document.getElementById('r-dia-fat').textContent = fmt(fatuDia);
+  document.getElementById('r-dia').textContent = fmt(lucroDia);
+  document.getElementById('r-semana').textContent = fmt(lucroSemana);
+  document.getElementById('r-mes').textContent = fmt(lucroMes);
+  document.getElementById('r-ano').textContent = fmt(lucroAno);
+  var copy = '';
+  if(lucroMes >= 3000){
+    copy = '<strong>Incrível!</strong> Com apenas ' + pares + ' pares por dia, você pode faturar <strong>' + fmt(lucroMes) + ' por mês</strong> trabalhando de casa!';
+  } else if(lucroMes >= 1000){
+    copy = 'Vendendo ' + pares + ' pares por dia, você gera <strong>' + fmt(lucroMes) + ' de renda extra por mês</strong>. Tudo isso trabalhando no seu tempo, de casa.';
+  } else {
+    copy = 'Mesmo começando devagar, <strong>' + fmt(lucroMes) + ' por mês</strong> já fazem diferença. E à medida que você ganha prática, a produção aumenta naturalmente.';
+  }
+  document.getElementById('calc-copy').innerHTML = copy;
+}
+['calc-pares','calc-preco','calc-custo'].forEach(function(id){
+  document.getElementById(id).addEventListener('input', calcular);
+});
+calcular();
+
+// FAQ
+document.querySelectorAll('.faq-item').forEach(function(item){
+  item.addEventListener('click', function(){ item.classList.toggle('open'); });
+});
+
+// SMOOTH SCROLL
+document.querySelectorAll('a[href="#planos"]').forEach(function(a){
+  a.addEventListener('click', function(e){
+    e.preventDefault();
+    document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });
+  });
+});
+</script>
+</body>
+</html>
