@@ -682,9 +682,34 @@ footer a { color: #FF6B00; text-decoration: none; }
     + <span>Video Aulas Passo a Passo</span>
   </h1>
 
-  <div style="margin: 14px auto 16px; text-align:center;">
-    <div style="font-size:80px;">🧵</div>
-  </div>
+  <script src="https://fast.wistia.com/player.js" async></script>
+<script src="https://fast.wistia.com/embed/jov4gjjukn.js" async type="module"></script>
+
+<style>
+.video-vsl{
+  max-width: 280px;
+  margin: 18px auto 22px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0,0,0,.35);
+}
+
+.video-vsl wistia-player{
+  width:100%;
+  display:block;
+}
+
+wistia-player[media-id='jov4gjjukn']:not(:defined){
+  background:center / cover no-repeat url('https://fast.wistia.com/embed/medias/jov4gjjukn/swatch');
+  display:block;
+  filter:blur(5px);
+  padding-top:177.78%;
+}
+</style>
+
+<div class="video-vsl">
+  <wistia-player media-id="jov4gjjukn" aspect="0.5625"></wistia-player>
+</div>
 
   <div class="metodo-row">
     <div class="metodo-badge costura">
@@ -1023,7 +1048,7 @@ footer a { color: #FF6B00; text-decoration: none; }
       Clique no botão abaixo e garanta já o seu! ↴
     </div>
 
-    <a href="https://checkout.essenciapro.site/PANTUFAS" class="btn-cta green pulse">
+    <a href="https://go.perfectpay.com.br/PPU38CQC52F" class="btn-cta green pulse">
       SIM, QUERO O PLANO COMPLETO
     </a>
 
