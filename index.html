@@ -1881,6 +1881,7 @@ if (!isMobile()) {
   let isAttemptingToLeave = false;
 
   // Verificar se popup já foi mostrado nesta sessão
+  sessionStorage.removeItem(POPUP_SHOWN_KEY);
   const hasShownPopup = sessionStorage.getItem(POPUP_SHOWN_KEY);
   if (hasShownPopup) {
     popupShown = true;
