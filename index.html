@@ -1699,7 +1699,13 @@ document.addEventListener('contextmenu', function(e){
 img{
   pointer-events: none;
   -webkit-user-drag: none;
-  user-drag: none;
+}
+
+/* REATIVAR POPUP */
+#exit-popup, #exit-popup * {
+  pointer-events: auto !important;
+  -webkit-user-select: auto !important;
+  user-select: auto !important;
 }
 
 /* BLOQUEAR HIGHLIGHT */
@@ -1881,7 +1887,6 @@ if (!isMobile()) {
   let isAttemptingToLeave = false;
 
   // Verificar se popup já foi mostrado nesta sessão
-  sessionStorage.removeItem(POPUP_SHOWN_KEY);
   const hasShownPopup = sessionStorage.getItem(POPUP_SHOWN_KEY);
   if (hasShownPopup) {
     popupShown = true;
