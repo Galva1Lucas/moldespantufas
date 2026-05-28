@@ -1889,26 +1889,23 @@ if (!isMobile()) {
   const popup = document.getElementById('exit-popup');
   const closeBtn = document.getElementById('exit-popup-close');
 
-  // FUNÇÃO PARA MOSTRAR POPUP
+ // FUNÇÃO PARA MOSTRAR POPUP
   function showExitPopup() {
     if (!popupShown) {
       popupShown = true;
       sessionStorage.setItem(POPUP_SHOWN_KEY, 'true');
       isAttemptingToLeave = true;
-      
-      // Mostrar popup com animação
+
       popup.classList.add('show');
-      
-      // Bloquear scroll
+
       document.body.style.overflow = 'hidden';
       document.body.style.position = 'fixed';
       document.body.style.width = '100%';
-      
-      // Vibração tátil
+
       if (navigator.vibrate) {
         navigator.vibrate([200, 100, 200]);
       }
-  }
+    }
   }
 
   // FUNÇÃO PARA FECHAR POPUP
